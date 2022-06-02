@@ -1,0 +1,35 @@
+version: "3"
+
+services:
+  api:
+    build: .
+    ports:
+      - "15000:15000" # http server port
+      - "6060:6060" 
+    depends_on:
+      - "db"
+    networks: [custom_net]
+    restart:
+      on-failure
+      #  db:
+      #    image: mysql
+      #    environment:
+      #      - MYSQL_DATABASE=database1
+      #      - MYSQL_USER=123
+      #      - MYSQL_ROOT_PASSWORD=456
+      #      - MYSQL_PASSWORD=456
+      #      - MYSQL_TCP_PORT=3306
+      #      - MYSQL_HOST=db
+      #    networks: [custom_net]
+      #    ports:
+      #      - "3306:3306"
+      #    hostname:
+      #      db.local
+      #    volumes:
+      #      - mysqlVolume:/var/lib/mysql
+
+networks:
+  custom_net: {}
+
+    #volumes:
+    #  mysqlVolume: {}

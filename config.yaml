@@ -1,0 +1,8 @@
+dbaddress: smartplantdb.mysql.database.azure.com # see docker-compose file.
+dbname: Smartplant
+dbpassword: "Admin01"
+dbport: 3306
+dbtable: data
+dbusername: "Smartplant"
+espkey: 3f3ea036-6e3e-4731-a475-08e008108474
+httpport: 15000
