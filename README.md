@@ -37,18 +37,14 @@ one you will run the docker-compose.yaml file using the following command
 ```console
 $ docker-compose up --build -d
 ```
-you swagger docs will be hosted on http://localhost:6060/swagger/index.html#/
 
 
-## Things i've added to the source code
 
-i've added `corsMiddleware` it's an http middleware that allows queries from the browser.
 
-i've added Internal Server Error status when the api fails.
 
 
 ## Note:
 make sure to have the config file on your path before running the
 docker-compose command.
-3f3ea036-6e3e-4731-a475-08e008108474
+
 
